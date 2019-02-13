@@ -22,9 +22,9 @@ export default class City extends Country {
       deep: true,
       exclude: [/\-/],
     });
-    this.city = camelcaseResponse.city || {};
-    this.location = camelcaseResponse.location || {};
-    this.postal = camelcaseResponse.postal || {};
+    this.city = camelcaseResponse.city || undefined;
+    this.location = camelcaseResponse.location || undefined;
+    this.postal = camelcaseResponse.postal || undefined;
     this.subdivisions = camelcaseResponse.subdivisions || [];
   }
 }
